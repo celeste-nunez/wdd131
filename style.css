@@ -1,0 +1,20 @@
+body {
+    background-color: beige;
+    font-size: 18px;
+    margin: 0;
+}
+
+main {
+    background-color: #A97C73;
+    height: 100vh; 
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+
+/* default font size is 16 pixels */
+/* viewport height = vh  the height of the viewer browser window*/
+/* use . for something w/ a class and # for something w/ an ID */
+/* em makes your font a fraction of the main font size */
