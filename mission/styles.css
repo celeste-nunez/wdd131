@@ -1,0 +1,41 @@
+.content {
+    margin: auto;
+    max-width: 620px;
+    font-size: 20px;
+}
+header {
+    text-align: center;
+    letter-spacing: 2px;
+}
+h1 {
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+.subtitle {
+    color: #006EB6
+}
+main {
+    text-align: left;
+    padding: 10px;
+}
+.list li{
+    margin: 10px;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    width: 150px;
+}
+
+
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+.dark h2 {
+    color: #214491;
+}
