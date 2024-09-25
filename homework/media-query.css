@@ -17,6 +17,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+    align-items: stretch;
 }
 
 section {
