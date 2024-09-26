@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+ 
+@media screen and (min-width: 500px) {
+    .gallery img {
+        object-fit: cover;
+    }
+}
