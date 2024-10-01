@@ -6,3 +6,21 @@ function toggleMenu() {
 }
 
 menuButton.addEventListener("click", toggleMenu);
+
+
+function updateImages() {
+const images = document.querySelectorAll('.gallery img');
+const screenWidth = window.innerWidth;
+
+images.forEach((img) => {
+    if (screenWidth > 1000) {
+    img.src = "norris-full.jpeg";
+    } else {
+    img.src = "norris-sm.jpeg";
+    }
+});
+}
+
+
+window.addEventListener('load', updateImages);
+window.addEventListener('resize', updateImages);

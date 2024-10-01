@@ -66,6 +66,10 @@ footer {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .gallery img{
+        max-width: 350px;
+        height: auto;
+    }
     #menu-button {
         display: none;
     }
