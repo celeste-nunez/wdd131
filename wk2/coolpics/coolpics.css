@@ -39,6 +39,7 @@ header > .menu-drop {
     padding: 0;
     margin: 0;
     color: inherit;
+    cursor: pointer;
 }
 .gallery img {
     border: #fff 0.5em solid;
@@ -50,15 +51,16 @@ footer {
     padding: 0.5em;
 }
 
+.hide {
+    display: none;
+}
+
 @media screen and (min-width: 700px) {
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 4em;
         align-self: center;
-    }
-    .hide {
-        display: none;
     }
 }
 

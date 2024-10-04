@@ -1,9 +1,14 @@
 //  arrays.js
 const steps = ["one", "two", "three"];
-const listTemplate(step) {
-    const listElement = document.getElementById("myList");
-    listElement.innerHTML += `<li>${item}</li>`;
-  return //the html string made from step
+function listTemplate(step) {
+  return `<li>${step}</li>`;
 }
-const stepsHtml = // use map to convert the list from strings to HTML
-document.querySelector("#myList").innerHTML = // set the innerHTML
+const stepsHtml = steps.map(listTemplate);
+document.querySelector("#myList").innerHTML = stepsHtml.join("");
+
+// const grades = ["A", "B", "C", "D"]
+// function convertGrade(grade) {
+//     let point = 0;
+//     if (grade === "A")
+// }
+

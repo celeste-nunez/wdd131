@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Roboto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    color: #770a0a;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+    border-top: 1px solid #d9b247;
+    border-bottom: 1px solid #d9b247;
+    color: #be1313;
+}
+
+.option {
+    margin: 0.75em;
+}
+
+.books-and-search {
+    display: flex; /* Change the display to flex */
+    flex-direction: row; /* Set the flex direction to row */
+    height: 100vh; /* Set the height to 100vh to make it stretch down the page */
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 20rem 50rem;
+}
+
+.book-details {
+    grid-column: 1;
+    text-align: right;
+    padding-right: 1rem;
+    margin-top: 1.8rem;
+}
+
+.book-main {
+    grid-column: 2;
+    margin: 1em;
+    padding-left: 3rem;
+    border-left: 1px solid #d9b247;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.search-element {
+    grid-column: -1;
+    border: 1px solid #d9b247;
+    height: 100vh;
+    width: 20rem;
+    overflow-y: auto;
+    margin: 2em;
+}
+
+.book-cover {
+    width: 20rem;
+}
+
+#title {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #be1313;
+}
+#date {
+    font-size: 1.5em;
+    color: #770a0a;
+}
+#ages {
+    font-size: 1.2em;
+    color: #770a0a;
+}
+#genre {
+    font-size: 1.2em;
+    color: #770a0a;
+}
+#description {
+    color: #770a0a;
+    font-size: 1em;
+}
+.skiptocontent a {
+	/* set the element to absolute positioning */
+    position: absolute;
+	/* move it off screen */
+	/* Make sure it will be on the left edge of the screen */
+    left: -1000px;
+	/* Change the background and color to something that stands out */
+    background-color: fuchsia;
+}
+.skiptocontent a:focus {
+	left: 0px;
+}
