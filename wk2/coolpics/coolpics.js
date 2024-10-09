@@ -21,6 +21,5 @@ images.forEach((img) => {
 });
 }
 
-
 window.addEventListener('load', updateImages);
 window.addEventListener('resize', updateImages);
