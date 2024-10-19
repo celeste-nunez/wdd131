@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ---------------------------------------------------------------- */
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #546A7B;
+  --secondary-color: #C3B59F;
+  --accent1-color: #030027;
+  --accent2-color: #fff;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Tinos";
+  --paragraph-font: "Tinos", Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+/* ---------------------------------------------------------------- */
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Sacramento', cursive; /* Corrected font-family name */
+    font-size: 2.5em; /* Adjust the size as needed */
+    color: var(--accent2-color);
+}
+.nav-box a {
+  font-family: 'Tinos', Helvetica, sans-serif;
+  text-decoration: none;
+  color: var(--accent2-color);
+  margin: 1em;
+  font-size: 1.23em;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
