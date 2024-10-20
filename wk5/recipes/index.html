@@ -7,7 +7,7 @@
     <meta name="description" content="recipe book for wk5 prove">
     <meta name="author" content="Celeste W.">
     <link rel="stylesheet" href="recipes.css">
-    <script src="recipes.js" defer></script>
+    <script type="module" src="main.js" defer></script>
     <meta property="og:title" content="Recipes">
     <meta property="og:type" content="website" />
     <meta property="og:description" content="A collective recipe book online">
@@ -30,25 +30,9 @@
             </button>
         </section>
     </header>
+    <hr>
     <main>
-        <section class="dessertBlock">
-            <div class="recipeImg"><img src="images/apple-crisp.jpg" alt="recipeImg"></div>
-            <div class="recipeContent">
-                <div class="recipeName"><h2>Apple Crisp</h2></div>      
-                <span
-                    class="recipeStars"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <div class="recipeDescription hide"><p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream. </p></div>
-            </div>
-        </section>
+        <div class="recipesBlock"></div>
     </main>
     <footer>
         <div class="icons">
@@ -62,3 +46,25 @@
     </footer>
 </body>
 </html>
+
+<!-- 
+
+
+<section class="dessertBlock">
+    <div class="recipeImg"><img src="images/apple-crisp.jpg" alt="recipeImg"></div>
+    <div class="recipeContent">
+        <div class="recipeName"><h2>Apple Crisp</h2></div>      
+        <span
+            class="recipeStars"
+            role="img"
+            aria-label="Rating: 4 out of 5 stars"
+        >
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+        <div class="recipeDescription hide"><p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream. </p></div>
+    </div>
+</section> -->
