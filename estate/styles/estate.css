@@ -35,22 +35,97 @@ header {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+  align-items: center;
+  position: relative;
 }
 
 .logo {
   font-family: 'Sacramento', cursive; /* Corrected font-family name */
     font-size: 2.5em; /* Adjust the size as needed */
     color: var(--accent2-color);
+    margin: 0;
 }
-.nav-box a {
+
+.nav-box a{
   font-family: 'Tinos', Helvetica, sans-serif;
   text-decoration: none;
   color: var(--accent2-color);
   margin: 1em;
   font-size: 1.23em;
+  color: var(--primary-color);
+}
+
+/* LITTLE DROP DOWN STYLING */
+
+.nav-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background-color: var(--accent2-color);
+  width: 20%;
+}
+.logoLine {
+  width: 90%;
+  color: var(--primary-color);
+}
+.menuButton {
+  background-color: var(--primary-color);
+  font-family: 'Tinos', Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.hamburger {
+  color: var(--accent2-color);
+  width: 30px;
+}
+.hide {
+  display: none;
+}
+
+/* STYLING THE NAV-BOX FOR RESIZED BIG SCREEN */
+
+@media screen and (min-width: 950px){
+  
+  .menuButton {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  .logoLine {
+    background-color: var(--accent2-color);
+    color: var(--accent2-color);
+    width: 90%
+  }
+  .nav-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    margin-right: 4em;
+  }
+  .nav-box a {
+    color: var(--accent2-color)
+  }
+
 }
 
 /* ---------------------------------------------------------------- */
+
+.background {
+  background-size: cover;
+  background-image: url('images/home.webp');
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
 
 /* ---------------------------------------------------------------- */
 

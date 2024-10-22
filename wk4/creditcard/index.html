@@ -20,13 +20,13 @@
             <label class="holderLabel" for="cardHolder">Card Holder</label>
             <input class="holderInput" type="text" id="creditCardHolder" placeholder="Cardholder Name" required>
             <label class="cardExp" for="expiration">Expiration</label>
-            <input class="monthInput date" name="monthInput" type="number" id="expirationMonth" placeholder="MM" required>
-            <input class="yearInput date" name="yearInput" type="number" id="expirationMonth" placeholder="YY" required>
+            <input class="monthInput date" name="monthInput" type="number" id="expirationMonth" placeholder="MM" min="1" max="12" required>
+            <input class="yearInput date" name="yearInput" type="number" id="expirationMonth" placeholder="YY" min="24" max="36" required>
         </section>
         <section class="ccBack">
             <label class="cvvLabel" for="cvvCode">CVC/CVV</label>
             <div class="blackBox"></div>
-            <input class="cvvInput" name="CVV" type="number" id="creditCardCVV" placeholder="xxx" minlength="3" required>
+            <input class="cvvInput" name="CVV" type="number" id="creditCardCVV" placeholder="xxx" min="100" max="1000">
         </section>
         <button class="submitButton">submit</button>
         <!-- line 33 curtosey of chat gpt -->
