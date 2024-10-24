@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahlquist Estates</title>
+    <script src="estate.js" defer></script>
+    <link rel="stylesheet" href="styles/estate.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"  class="logo">Wahlquist Homes</a>
+        <button class="menuButton">
+            <hr class="hamburger">
+            <hr class="hamburger">
+            <hr class="hamburger">
+        </button>
+        <nav class="nav-box hide">
+            <a href="">Buy</a>
+            <hr class="logoLine">
+            <a href="">Sell</a>
+            <hr class="logoLine">
+            <a href="">About</a>
+            <hr class="logoLine">
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="selectionsMenu">
+                <label for="propertyType">Property Type:</label>
+                <select id="propertyType" name="propertyType">
+                <option value="option1">Home</option>
+                <option value="option2">Townhouse</option>
+                <option value="option3">Land for sale</option>
+                <option value="option4">Condo</option>
+                </select>
+                <label for="propertyPrice">Price:</label>
+                <select id="propertyPrice" name="propertyPrice">
+                <option value="option1">100,000-200,000</option>
+                <option value="option2">200,000-300,000</option>
+                <option value="option3">300,000-400,000</option>
+                <option value="option4">400,000-500,000</option>
+                </select>
+                <label for="propertyBeds">Beds:</label>
+                <select id="propertyBeds" name="propertyBeds">
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4+</option>
+                </select>
+                <label for="propertyBaths">Baths:</label>
+                <select id="propertyBaths" name="propertyBaths">
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3+</option>
+                </select>
+                <label for="propertyCity">City:</label>
+                <select id="propertyCity" name="propertyCity">
+                <option value="option1">Rigby</option>
+                <option value="option2">Rexburg</option>
+                <option value="option3">Idaho Falls</option>
+                </select>
+        </div>
+        <div class="allProperties">
+          <div class="propertyDisplay">
+              <div class="slider-container">
+                  <div class="slider">
+                    <div class="slide active">
+                      <img src="images/exampleHome.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                      <img src="images/exampleHome1.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                      <img src="images/exampleHome2.jpg" alt="Image 3">
+                    </div>
+                  </div>
+                
+                  <a class="prev" onclick="prevSlide()">&#10094;</a>
+                  <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <p>Property Type: House</p>
+                <p>Property Price: $410,000</p>
+          </div>
+        </div>
+    </main>
+</body>
