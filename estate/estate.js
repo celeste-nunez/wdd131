@@ -1,3 +1,5 @@
+// import { properties } from './properties.mjs';
+
 function toggleMenu() {
     const menu = document.querySelector(".nav-box");
     menu.classList.toggle("hide")
@@ -55,14 +57,12 @@ document.querySelectorAll('.slider-container').forEach((sliderContainer, index) 
 
 // ----------------------------------------END OF SLIDE SHOWS
 
-import { properties } from './properties.js';
-
 console.log(properties);
 
 function renderProperties(properties) {
   return `
   <div class="propertyDisplay">
-  <div class="slider-container">
+    <div class="slider-container">
       <div class="slider">
         <div class="slide active">
           <img src="${properties.propertyImg1}" alt="Image 1">
@@ -85,6 +85,44 @@ function renderProperties(properties) {
     <p>Garage: ${properties.garage}</p>
     <p>Address: ${properties.address}</p>
     <p>Year Built: ${properties.yearBuilt}</p>
-</div>
+  </div>
   `
 }
+
+function filter(properties) {
+  const propertyTypeSelector = document.querySelector('#propertyTypeSelector');
+  const propertyPriceSelector =  document.querySelector('#propertyPriceSelector');
+  const propertyBedSelector = document.querySelector('#propertyBedsSelector');
+  const propertyBathSelector =  document.querySelector('#propertyBathSelector');
+  const propertyCitySelector = document.querySelector('#propertyLocationSelector');
+  
+  propertyTypeSelector.addEventListener('change', propertyFilter);
+  propertyPriceSelector.addEventListener('change', propertyFilter);
+  propertyBedSelector.addEventListener('change', propertyFilter);
+  propertyBathSelector.addEventListener('change', propertyFilter);
+  propertyCitySelector.addEventListener('change', propertyFilter);
+
+  function propertyFilter() {
+    const selectedType = propertyTypeSelector.value.toLowerCase();
+    const selectedPrice = propertyPriceSelector.value;
+    const selectedBed = propertyBedSelector.value;
+    const selectedBath = propertyBathSelector.value;
+    const selectedCity = propertyCitySelector.value.toLowerCase();
+  }
+
+  const filteredProperties = properties.filter(property => {
+    return (
+      (selectedType === '' || property.propertyType.toLowerCase().includes(selectedType)) &&
+      (selectedPrice === '' || property.propertyPrice <= selectedPrice) &&
+      (selectedBed === '' || property.propertyBed == selectedBed) &&
+      (selectedBath === '' || property.propertyBath == selectedBath) &&
+      (selectedCity === '' || property.propertyCity.toLowerCase().includes(selectedCity))
+    );
+  });
+}
+
+function init() {
+  const propertyHTML = renderProperties(properties);
+  document.querySelector('allProperties').innerHTML = propertyHTML;
+}
+init();
