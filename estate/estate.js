@@ -1,4 +1,4 @@
-// import { properties } from './properties.mjs';
+import { properties } from './properties.js';
 
 function toggleMenu() {
     const menu = document.querySelector(".nav-box");
@@ -60,7 +60,7 @@ document.querySelectorAll('.slider-container').forEach((sliderContainer, index) 
 console.log(properties);
 
 function renderProperties(properties) {
-  return `
+  return properties.map(property => ` 
   <div class="propertyDisplay">
     <div class="slider-container">
       <div class="slider">
@@ -86,7 +86,7 @@ function renderProperties(properties) {
     <p>Address: ${properties.address}</p>
     <p>Year Built: ${properties.yearBuilt}</p>
   </div>
-  `
+  `).join('');
 }
 
 function filter(properties) {
@@ -119,10 +119,14 @@ function filter(properties) {
       (selectedCity === '' || property.propertyCity.toLowerCase().includes(selectedCity))
     );
   });
+  document.querySelector('.allProperties').innerHTML = renderProperties(filteredProperties);
 }
 
+
 function init() {
-  const propertyHTML = renderProperties(properties);
-  document.querySelector('allProperties').innerHTML = propertyHTML;
+  document.querySelector('.allProperties').innerHTML = renderProperties(properties);
+  filter(properties);
 }
+
 init();
+ 
