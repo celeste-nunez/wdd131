@@ -1,4 +1,4 @@
-export const properties = [
+export let properties = [
     {
         propertyType: 'House',
         propertyPrice: '410,000',
@@ -13,11 +13,11 @@ export const properties = [
         ],
         yearBuilt: '2003',
         propertyImg1: 
-            '.images/exampleHome.jpg',
+            'images/exampleHome.jpg',
         propertyImg2:
-            '.images/exampleHome1.jpg',
+            'images/exampleHome1.jpg',
         propertyImg3:
-            '.images/exampleHome2.jpg'
+            'images/exampleHome2.jpg'
     },
     {
         propertyType: 'House',
@@ -33,11 +33,11 @@ export const properties = [
         ],
         yearBuilt: '2010',
         propertyImg1: 
-            '.images/exampleHome.jpg',
+            'images/exampleHome.jpg',
         propertyImg2:
-            '.images/exampleHome1.jpg',
+            'images/exampleHome1.jpg',
         propertyImg3:
-            '.images/exampleHome2.jpg'
+            'images/exampleHome2.jpg'
     },
     {
         propertyType: 'Condo',
@@ -53,10 +53,10 @@ export const properties = [
         ],
         yearBuilt: '2012',
         propertyImg1: 
-            '.images/exampleHome.jpg',
+            'images/exampleHome.jpg',
         propertyImg2:
-            '.images/exampleHome1.jpg',
+            'images/exampleHome1.jpg',
         propertyImg3:
-            '.images/exampleHome2.jpg'
+            'images/exampleHome2.jpg'
     }
 ]
