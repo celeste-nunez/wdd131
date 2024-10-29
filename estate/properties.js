@@ -1,62 +1,62 @@
 export let properties = [
     {
         propertyType: 'House',
-        propertyPrice: '410,000',
-        beds: '3',
-        baths: '2',
+        propertyPrice: 410000,
+        beds: '5',
+        baths: '3',
         sqft: '1,500',
-        garage: '2 car',
+        garage: '3 car',
         address: [
             'ulta strawberry dreams zero sugar',
-            'Rexburg, ID',
-            '83440'
+            'Rexburg',
+            'ID, 83440'
         ],
         yearBuilt: '2003',
         propertyImg1: 
-            'images/exampleHome.jpg',
+            'images/exampleHomea.jpg',
         propertyImg2:
-            'images/exampleHome1.jpg',
+            'images/exampleHomea1.jpg',
         propertyImg3:
-            'images/exampleHome2.jpg'
+            'images/exampleHomea2.jpg'
     },
     {
         propertyType: 'House',
-        propertyPrice: '500,000',
-        beds: '6',
-        baths: '4',
+        propertyPrice: 250000,
+        beds: '3',
+        baths: '2',
         sqft: '2,300',
-        garage: '3 car',
+        garage: 'Car port',
         address: [
             'chester the cheese rat',
-            'Rigby, ID',
-            '83442'
+            'Rigby',
+            'ID, 83442'
         ],
         yearBuilt: '2010',
         propertyImg1: 
-            'images/exampleHome.jpg',
+            'images/exampleHomeb.jpg',
         propertyImg2:
-            'images/exampleHome1.jpg',
+            'images/exampleHomeb1.jpg',
         propertyImg3:
-            'images/exampleHome2.jpg'
+            'images/exampleHomeb2.jpg'
     },
     {
-        propertyType: 'Condo',
-        propertyPrice: '220,000',
-        beds: '2',
-        baths: '1',
+        propertyType: 'House',
+        propertyPrice: 320000,
+        beds: '4',
+        baths: '2',
         sqft: '800',
-        garage: 'none',
+        garage: '2 car',
         address: [
             'smokey the banditttt',
-            'Idaho Falls, ID',
-            '83402'
+            'Idaho Falls',
+            'ID, 83402'
         ],
         yearBuilt: '2012',
         propertyImg1: 
-            'images/exampleHome.jpg',
+            'images/exampleHomec.jpg',
         propertyImg2:
-            'images/exampleHome1.jpg',
+            'images/exampleHomec1.jpg',
         propertyImg3:
-            'images/exampleHome2.jpg'
+            'images/exampleHomec2.jpg'
     }
 ]

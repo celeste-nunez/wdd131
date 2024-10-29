@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,16 @@
     <script type="module" src="estate.js" defer></script>
     <script type="module" src="properties.js" defer></script>
     <link rel="stylesheet" href="styles/estate.css">
+    <meta author="Celeste Wahlquist">
+    <meta description="A landing page for Doug's Real Estate Properties">
 </head>
+
 <body>
     <header>
         <p class="logo">Wahlquist Homes</p>
-        <button class="menuButton">
+        <button class="menuButton"
+        aria-label="menu button"
+        alt="menu button">
             <hr class="hamburger">
             <hr class="hamburger">
             <hr class="hamburger">
@@ -31,20 +37,61 @@
             <div class="overlay">
                 <div class="overlayText">
                     <div class="text">
-                        <p class="pitch">At Wahlquist Homes, we believe that buying or selling a home is more than just a transaction—it’s 
-                            a milestone in your life. Doug Wahlquist is the trusted guide you want by your side. With a commitment 
-                            to making your real estate journey seamless and successful, Doug’s ability to think outside the box and 
-                            form meaningful connections makes him an ideal partner in helping you achieve your home-buying or selling 
+                        <p class="pitch">At Wahlquist Homes, we believe that buying or selling a home is more than just
+                            a transaction—it’s
+                            a milestone in your life. Doug Wahlquist is the trusted guide you want by your side. With a
+                            commitment
+                            to making your real estate journey seamless and successful, Doug’s ability to think outside
+                            the box and
+                            form meaningful connections makes him an ideal partner in helping you achieve your
+                            home-buying or selling
                             goals.</p>
-                        </div>
                     </div>
                 </div>
-                <button class="contactButton">Contact Us</button>
-                <img class="homeImg" src="images/heroHome.jpg" alt="heroHome">
+            </div>
+            <button class="contactButton" alt="contactButton aria-label="contact us button">Contact Us</button>
+            <img class="homeImg" src="images/heroHome.jpg" alt="heroHome">
+        </div>
+        </div>
+        <div class="amazingReview">
+            <p>"Working with Doug was an absolute pleasure! They were knowledgeable, responsive, and truly dedicated to
+                finding the perfect home for us. From the first meeting to closing day, Doug made the entire process
+                smooth and stress-free. Highly recommend to anyone looking for a reliable and caring real estate
+                professional!"</p>
+            <p>-ChatGPT</p>
+        </div>
+        <div class="featuredProperties">
+            <div class="featured">
+                <img alt="homeSneakPeakImg" src="images/exampleHomea.jpg">
+                <a href="buy.html" class="seeMore" alt="propertySeeMore">View More</a>
+            </div>
+            <div class="featured">
+                <img alt="homeSneakPeakImg" src="images/exampleHomeb.jpg">
+                <a href="buy.html" class="seeMore" alt="propertySeeMore">View More</a>
+            </div>
+            <div class="featured">
+                <img alt="homeSneakPeakImg" src="images/exampleHomec.jpg">
+                <a href="buy.html" class="seeMore" alt="propertySeeMore">View More</a>
             </div>
         </div>
-        <p class="homeImgCredit">Photo by Sebastian Sørensen: https://www.pexels.com/photo/gray-house-with-fireplace-surrounded-by-grass-under-white-and-gray-cloudy-sky-731082/</p>
+        <div class="viewAllButton">
+            <a href="buy.html" alt="viewAllProperties" class="viewAll">View All Properties</a>
+        </div>
     </main>
-    
+    <footer>
+        <div class="allCredits">
+            <div class="imageCredit"><a href="https://www.pexels.com/photo/gray-house-with-fireplace-surrounded-by-grass-under-white-and-gray-cloudy-sky-731082/">Photo by Sebastian Sørensen</a></div>
+            <div class="iconCredit"><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></div>
+        </div>
+        <div class="siteInformation">
+            <p>Site created by: Celeste Wahlquist</p>
+            <p>Email Us: WahlquistHomes@gmail.com</p>
+        </div>
+        <div class="socialMedia">
+            <img src="images/instagram.png">
+            <img src="images/facebook.png">
+            <img src="images/tiktok.png">
+        </div>
+    </footer>
 </body>
 </html>

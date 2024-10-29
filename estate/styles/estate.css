@@ -37,6 +37,7 @@ header {
   text-decoration: none;
   align-items: center;
   position: relative;
+  width: 101%;
 }
 
 .logo {
@@ -205,6 +206,62 @@ header {
     bottom: 10%;
     z-index: 3;
   }
+  .amazingReview {
+    margin: 40px;
+    border: solid 4px var(--accent1-color);
+    background-color: var(--accent2-color);
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 6px;
+  }
+
+  .featuredProperties {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+    border: solid 3px var(--accent1-color);
+    border-radius: 2px;
+  }
+
+  .featuredProperties img{
+    width: 350px;
+    height: auto;
+  }
+
+  .seeMore {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+    color: var(--primary-color);
+    border: solid 3px var(--accent2-color);
+  }
+
+  .viewAll {
+    text-decoration: none;
+    font-size: 1.4em;
+    background-color: var(--accent2-color);
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+  }
+
+  .viewAllButton {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0; 
+    text-decoration: none;
+  }
+
 }
 
 @media screen and (max-width: 950px){
@@ -233,9 +290,195 @@ header {
     grid-row: 2;
     border: solid 4px var(--accent1-color);
   }
+
+  .amazingReview {
+    position: relative;
+    margin: 2px;
+    border: solid 2px var(--accent1-color);
+    font-size: 1.2em;
+    text-align: center;
+    bottom: 70px
+  }
+  .featuredProperties img{
+    width: 100%;
+    height: auto;
+  }
+  .featuredProperties {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+    border: solid 3px var(--accent1-color);
+    border-radius: 2px;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .viewAllButton {
+    display: flex; 
+    justify-content: center; 
+    text-decoration: none;
+  }
+  .viewAll {
+    text-decoration: none;
+    font-size: 1.1em;
+    background-color: var(--accent2-color);
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+    margin-bottom: 30px;
+  }
+
 }
+
+
+
+
+
 /* ---------------------------------------------------------------- */
 /* BUY PAGE STYLING */
+
+@media screen and (min-width: 950px){
+  .buyIntroImg {
+    background-image: url('images/buyCrop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75vh;
+    border: solid 5px var(--accent1-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .buyIntroPara {
+    width: 500px;
+    height: 180px;
+    background-color: rgba(164, 175, 165, 0.9);
+    font-size: 1.15em;
+    border-radius: 8px;
+    margin: 10px;
+  }
+
+  .buyIntroContactButton {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .selectionsMenu {
+    background-color: var(--accent1-color);
+    height: 30px;
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+  }
+  label {
+    color: #fff;
+  }
+
+  #propertyTypeSelector, 
+  #propertyPriceSelector,
+  #propertyBedsSelector,
+  #propertyBathsSelector,
+  #propertyLocationSelector {
+    width: 150px;
+  }
+
+  .propertyDisplay {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;; 
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .propertyDescription {
+    flex: 1; 
+    font-size: 1.2em;
+    background-color:rgba(164, 175, 165, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .slider-container {
+    position: relative;
+    max-width: 600px;
+    max-height: 400px;
+    overflow: hidden;
+  }  
+}
+
+@media screen and (max-width: 950px){
+  .selectionsMenu {
+    background-color: var(--accent2-color);
+    height: auto;
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 0;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  label {
+    margin: 3px;
+  }
+
+  .seeMore {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+    color: var(--primary-color);
+    border: solid 3px var(--accent2-color);
+  }
+  .buyIntroPara {
+    display: none;
+  }
+
+  .propertyDisplay {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;; 
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .propertyDescription {
+    flex: 1; 
+    font-size: 1.2em;
+    background-color:rgba(164, 175, 165, 0.5);
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+  }
+}
+
+
+.option {
+  height: 20px;
+}
 
 .slider-container { 
   position: relative;
@@ -282,3 +525,30 @@ header {
 }
 
 /* ---------------------------------------------------------------- */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  width: 100%;
+  margin-top: 60px;
+}
+
+
+.iconCredit {
+  text-decoration: none;
+  color: inherit;
+  margin: 14px;
+}
+.imageCredit {
+  text-decoration: none;
+  color: inherit;
+  margin: 15px;
+  color: #fff;
+}
+
+.socialMedia img {
+  width: 35px;
+  margin: 5px;
+}
