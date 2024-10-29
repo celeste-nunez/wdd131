@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Celeste Wahlquist">
-    <meta name="description" content="Explore Wahlquist Estates, featuring a variety of available properties with detailed information on types, prices, and amenities.">
-    <title>Wahlquist Estates</title>
+    <meta name="description"
+        content="Explore Wahlquist Estates, featuring a variety of available properties with detailed information on types, prices, and amenities.">
     <title>Wahlquist Estates</title>
     <script type="module" src="estate.js"></script>
     <script type="module" src="properties.js"></script>
     <link rel="stylesheet" href="styles/estate.css">
 </head>
+
 <body>
     <header>
-        <a href="index.html"  class="logo">Wahlquist Homes</a>
-        <button class="menuButton" alt="Menu Button" aria-label="Menu Button">
+        <a href="index.html" class="logo">Wahlquist Homes</a>
+        <button class="menuButton" aria-label="Menu Button">
             <hr class="hamburger">
             <hr class="hamburger">
             <hr class="hamburger">
@@ -31,69 +33,70 @@
     </header>
     <main>
         <div class="buyIntroImg">
-          <div class="buyIntroPara">
-                <p class="BuyIntroParaBlurb">Whether you’re looking for a cozy starter home or a spacious family residence, we have options to suit every lifestyle and budget. If you see a property that catches your eye or if you have specific requirements in mind, don’t hesitate to reach out!</p>
+            <div class="buyIntroPara">
+                <p class="BuyIntroParaBlurb">Whether you’re looking for a cozy starter home or a spacious family
+                    residence, we have options to suit every lifestyle and budget. If you see a property that catches
+                    your eye or if you have specific requirements in mind, don’t hesitate to reach out!</p>
                 <a class="buyIntroContactButton" href="contact.html" aria-label="contact us Button">Contact Us Here</a>
-          </div>
+            </div>
         </div>
         <div class="selectionsMenu">
             <label for="propertyTypeSelector">Property Type:</label>
-            <select id="propertyTypeSelector" name="propertyTypeSelection"
-            aria-label="Property Type Selection">
-            <option value="option0">All</option>
-            <option value="House">House</option>
+            <select id="propertyTypeSelector" name="propertyTypeSelection" aria-label="Property Type Selection">
+                <option value="option0">All</option>
+                <option value="House">House</option>
             </select>
             <label for="propertyPriceSelector">Price:</label>
-            <select id="propertyPriceSelector" name="propertyPriceSelection"
-            aria-label="Property Price Selection">
-            <option value="option0">Any</option>
-            <option value="100000-200000">100,000-200,000</option>
-            <option value="200000-300000">200,000-300,000</option>
-            <option value="300000-400000">300,000-400,000</option>
-            <option value="400000-500000">400,000-500,000</option>
+            <select id="propertyPriceSelector" name="propertyPriceSelection" aria-label="Property Price Selection">
+                <option value="option0">Any</option>
+                <option value="100000-200000">100,000-200,000</option>
+                <option value="200000-300000">200,000-300,000</option>
+                <option value="300000-400000">300,000-400,000</option>
+                <option value="400000-500000">400,000-500,000</option>
             </select>
             <label for="propertyBedsSelector">Beds:</label>
-            <select id="propertyBedsSelector" name="propertyBedsSelection"
-            aria-label="Property Bedroom Selection">
-            <option value="option0">Any</option>
-            <option value="1">1+</option>
-            <option value="2">2+</option>
-            <option value="3">3+</option>
-            <option value="4">4+</option>
-            <option value="5">5+</option>
+            <select id="propertyBedsSelector" name="propertyBedsSelection" aria-label="Property Bedroom Selection">
+                <option value="option0">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
             </select>
-            <label for="propertyBathSelector">Baths:</label>
-            <select id="propertyBathsSelector" name="propertyBathsSelection"
-            aria-label="Property Bathroom Selection">
-            <option value="option0">Any</option>
-            <option value="1">1+</option>
-            <option value="2">2+</option>
-            <option value="3">3+</option>
+            <label for="propertyBathsSelector">Baths:</label>
+            <select id="propertyBathsSelector" name="propertyBathsSelection" aria-label="Property Bathroom Selection">
+                <option value="option0">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
             </select>
             <label for="propertyLocationSelector">Location:</label>
             <select id="propertyLocationSelector" name="propertyLocationSelection"
-            aria-label="Property Location Selection">
-            <option value="option0">Any</option>
-            <option value="Rigby">Rigby</option>
-            <option value="Rexburg">Rexburg</option>
-            <option value="Idaho Falls">Idaho Falls</option>
+                aria-label="Property Location Selection">
+                <option value="option0">Any</option>
+                <option value="Rigby">Rigby</option>
+                <option value="Rexburg">Rexburg</option>
+                <option value="Idaho Falls">Idaho Falls</option>
             </select>
         </div>
         <div class="allProperties"></div>
     </main>
     <footer>
         <div class="allCredits">
-            <div class="imageCredit"><a href="https://www.pexels.com/photo/golden-seahorse-keychain-and-keys-16262624/">Photo by COPPERTIST WU</a></div>
-            <div class="iconCredit"><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></div>
+            <div class="imageCredit"><a
+                    href="https://www.pexels.com/photo/golden-seahorse-keychain-and-keys-16262624/">Photo by COPPERTIST
+                    WU</a></div>
+            <div class="iconCredit"><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe
+                    icons created by Freepik - Flaticon</a></div>
         </div>
         <div class="siteInformation">
             <p>Site created by: Celeste Wahlquist</p>
             <p>Email Us: WahlquistHomes@gmail.com</p>
         </div>
         <div class="socialMedia">
-            <img src="images/instagram.png">
-            <img src="images/facebook.png">
-            <img src="images/tiktok.png">
+            <img src="images/instagram.png" alt="instagram">
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/tiktok.png" alt="tiktok">
         </div>
     </footer>
 </body>
