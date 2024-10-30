@@ -253,6 +253,53 @@ header {
     text-decoration: none;
   }
 
+  .indexBiography {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .indexBiography img {
+    width: 340px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .biographyText {
+    width: 430px;
+    font-size: 1.1em;
+    line-height: 2em;
+    position: relative;
+    background-color: rgba(164, 175, 165, 0.9);
+    padding: 0px 20px;
+    border-radius: 8px;
+    right: 20px;
+  }
+
+  .biographyContactButton {
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Tinos', Helvetica, sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-bottom: 10px;
+  }
+
+  .indexBiography img {
+    width: 340px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .biographyTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
 }
 
 @media screen and (max-width: 950px){
@@ -325,6 +372,49 @@ header {
     border: solid 2px var(--primary-color);
     margin-bottom: 30px;
   } 
+
+  .indexBiography {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .indexBiography img {
+    width: 340px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .biographyTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .biographyText {
+    width: 430px;
+    font-size: 1.1em;
+    line-height: 2em;
+    position: relative;
+    background-color: rgba(164, 175, 165, 0.9);
+    padding: 0px 20px;
+    border-radius: 8px;
+    margin: 20px;
+  }
+
+  .biographyContactButton {
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Tinos', Helvetica, sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -361,11 +451,12 @@ header {
 
   .buyIntroContactButton {
     background-color: var(--accent1-color);
-    color: var(--primary-color);
-    border: solid 1px var(--primary-color);
+    color: #fff;
+    border: solid 1px var(--accent1-color);
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
+    box-shadow: var(--primary-color);
   }
 
   .selectionsMenu {
@@ -520,9 +611,10 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: var(--accent1-color);
-  color: var(--primary-color);
+  color: #fff;
   width: 100%;
   margin-top: 60px;
+  text-decoration: none;
 }
 
 
@@ -541,4 +633,9 @@ footer {
 .socialMedia img {
   width: 35px;
   margin: 5px;
+}
+
+.imageCredit a, .iconCredit a {
+  text-decoration: none;
+  color: #fff;
 }
